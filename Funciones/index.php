@@ -29,3 +29,35 @@ if(isset($_GET[$numero])) {
     echo "No hay numero para sacar la tabla";
 
 }
+echo "<br>";
+
+// ejemplo 3
+
+function calculadora($numero1,$numero2){
+    $suma = $numero1+$numero2;
+    $resta= $numero1-$numero2;
+    $multi=$numero1*$numero2;
+    $division=$numero1/$numero2;
+
+    echo "Suma: $suma<br>";
+    echo "Resta: $resta<br>";
+    echo "Multi: $multi<br>";
+    echo "Division: $division<br>";
+}
+
+calculadora(55,22);
+//ejemplo 4
+
+function devuelveNombre($nombre){
+    return "El nombre es: $nombre";
+}
+echo devuelveNombre("Juan");
+
+// Ejemplo 5
+function devuelveNombre1($nombre, $apellido){
+    $texto= "El nombre es: $nombre"."<br>"."Los apellidos son: $apellido";
+    return $texto;
+}
+echo devuelveNombre("Juan", "Perez");
+
+
